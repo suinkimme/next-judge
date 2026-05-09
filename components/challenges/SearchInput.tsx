@@ -13,7 +13,7 @@ interface SearchInputProps {
 export function SearchInput({
   value,
   onChange,
-  placeholder = '제목 또는 문제 번호로 검색',
+  placeholder = '제목으로 검색',
   debounceMs = 300,
 }: SearchInputProps) {
   // Mirror the controlled value locally so an in-flight Korean IME
