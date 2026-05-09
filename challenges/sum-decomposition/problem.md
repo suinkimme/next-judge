@@ -6,10 +6,10 @@ tags:
   - 다이나믹 프로그래밍
   - 수학
 samples:
-  - input: "3 2"
-    output: "4"
-  - input: "4 3"
-    output: "15"
+  - input: "2 2"
+    output: "3"
+  - input: "5 2"
+    output: "6"
 ---
 
 0부터 N까지의 정수 중 K개를 골라 더했을 때 합이 N이 되는 경우의 수를 구해보세요.
