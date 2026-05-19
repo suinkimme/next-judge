@@ -27,7 +27,7 @@ init()
 // BOJ-style output normalization: trim trailing whitespace per line, drop
 // trailing blank lines. Case-sensitive otherwise.
 function normalizeOutput(s) {
-  const lines = s.split('\n').map((l) => l.replace(/[ \t]+$/, ''))
+  const lines = s.split('\n').map((l) => l.replace(/[ \t\r]+$/, ''))
   while (lines.length > 0 && lines[lines.length - 1] === '') lines.pop()
   return lines.join('\n')
 }
