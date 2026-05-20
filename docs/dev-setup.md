@@ -239,3 +239,4 @@ docs/                 설계 문서 모음
 | `prepared statement "..." already exists` | `db/index.ts`의 `prepare: false` 옵션 확인 |
 | GitHub 로그인 후 redirect 오류 | OAuth App의 callback URL이 `http://localhost:3000/api/auth/callback/github`인지 확인 |
 | `challenges:sync` 실패 | `POSTGRES_URL_NON_POOLING`이 Session pooler(포트 5432)인지 확인 |
+| `JWTSessionError: no matching decryption secret` | 브라우저에 이전 `AUTH_SECRET`으로 암호화된 세션 쿠키가 남아 있는 경우. DevTools → Application → Cookies에서 `http://localhost:3000` 쿠키를 삭제하거나 시크릿 창으로 접속. `AUTH_SECRET`을 변경한 직후라면 dev 서버 재시작도 필요 |
