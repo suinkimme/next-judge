@@ -24,7 +24,7 @@ self.ctx2d = null
 
 // BOJ 출력 정규화 — lib/judge/normalize.ts 와 동일 규칙. python.js 와 sync 유지.
 function normalizeOutput(s) {
-  const lines = s.split('\n').map((l) => l.replace(/[ \t]+$/, ''))
+  const lines = s.split('\n').map((l) => l.replace(/[ \t\r]+$/, ''))
   while (lines.length > 0 && lines[lines.length - 1] === '') lines.pop()
   return lines.join('\n')
 }

@@ -7,7 +7,7 @@
 //   2) trailing 빈 줄 제거
 //   3) 그 외엔 그대로 유지 (대소문자 구분, 줄 사이 공백 유지)
 export function normalizeOutput(s: string): string {
-  const lines = s.split('\n').map((l) => l.replace(/[ \t]+$/, ''))
+  const lines = s.split('\n').map((l) => l.replace(/[ \t\r]+$/, ''))
   while (lines.length > 0 && lines[lines.length - 1] === '') lines.pop()
   return lines.join('\n')
 }
